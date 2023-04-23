@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(Hello)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
+project(hello)
 add_executable(hello hello.cpp)
 add_compile_options(-fsanitize=undefined)
 
