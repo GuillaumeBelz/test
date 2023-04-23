@@ -31,7 +31,7 @@ jobs:
       
     - name: Run
       # run app
-      run: cd build; ./hello
+      run: /usr/bin/c++ --version; cd build; ./hello
 
     - name: Test
       working-directory: ${{github.workspace}}/build
