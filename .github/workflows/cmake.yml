@@ -32,7 +32,7 @@ jobs:
     - name: Run
       # run app
       continue-on-error: true
-      run: /usr/bin/clang++ --version; cd build; ./hello
+      run: /usr/bin/clang++-17 --version; cd build; ./hello
 
     - name: Test
       working-directory: ${{github.workspace}}/build
